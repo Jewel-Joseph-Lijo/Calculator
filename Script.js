@@ -12,7 +12,9 @@ function clearscreen(){
 }
 function equalclick(){
     var text=document.getElementById("screen").value
-    var result=eval(text)
+    var multext=text.replace("x","*")
+    var divtext=multext.replace("÷","/")
+    var result=eval(divtext)
     document.getElementById("screen").value=result
     resulton=true
 }
